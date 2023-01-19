@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "lyric_search_widget"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
