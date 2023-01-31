@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QVBoxLayout, QWidget, QLabel
+from PyQt6.QtWidgets import QApplication, QVBoxLayout, QWidget, QLabel, QPushButton, QLineEdit
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt
 import sys
@@ -12,6 +12,9 @@ class Window(QWidget):
         self.setWindowTitle("IDK")
         self.setWindowIcon(QIcon(self.resources+"icon.png"))
         self.GUI()
+
+        #button = QPushButton("Hello World!",self)
+        #button.move(345,345)
  
     def GUI(self):
         
