@@ -24,9 +24,9 @@ class Window(QWidget):
 
         self.input = QLineEdit(self)
         layout.addWidget(self.input, alignment= Qt.AlignmentFlag.AlignCenter)
-        
-        self.input = QTextEdit("try")
-        layout.addWidget(self.input, alignment= Qt.AlignmentFlag.AlignCenter)
+        #self.input.setPlaceholderText("format like: Artist, Title")
+        #self.input = QTextEdit("try")
+        #layout.addWidget(self.input, alignment= Qt.AlignmentFlag.AlignCenter)
  
         button = QPushButton("Update Text")
         button.clicked.connect(self.update)
@@ -44,7 +44,9 @@ class Window(QWidget):
         print(self.label.text())
         text = self.input.text()
         artist = text.split()[0]
+        #artist.pop[-1]
         title = text.split()[1]
+        
         print(artist)
         print(title)
          
